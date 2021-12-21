@@ -1,0 +1,68 @@
+.footer-container {
+    background:rgb(215, 206, 224) ;
+    height: auto;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    margin: auto;
+}
+
+.footer-icons a {
+    margin: 5vh 2vw ;
+    border-radius: 50%;
+    padding: 15px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-icons i {
+    font-size: 25px;
+}
+
+.footer-icons a:visited {
+    color:black
+}
+
+.fa-linkedin-in {
+    color:#0e76a8;
+    font-weight: bold;
+}
+
+.fa-github {
+    color: #171515;
+    font-weight: bold;
+}
+
+.fa-whatsapp {
+    color:#128c7e;
+    font-weight: bold;
+}
+
+#footer-linkedin:hover {
+    background: #0e76a8;;
+}
+#footer-linkedin:hover > .fa-linkedin-in {
+    color: white;
+}
+
+#footer-github:hover {
+    background: #171515;
+}
+#footer-github:hover > .fa-github {
+    color: white;
+}
+
+#footer-whatsapp:hover {
+    background: #128c7e;
+}
+#footer-whatsapp:hover > .fa-whatsapp {
+    color: white;
+}

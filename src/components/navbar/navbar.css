@@ -1,0 +1,97 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height:auto;
+    min-height: 10vh;
+}
+
+.navbar-left {
+    display: none;
+}
+
+#navbar-left-contacto {
+    background: url("../../../public/img/colorful.jpg") center;
+}
+
+.navbar-left li {
+    margin: 0 3vw;
+}
+
+.navbar-left-contacto {
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-right p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 0;
+}
+
+.navbar-right p i {
+    padding: 5px;
+}
+
+.navbar-right div {
+    padding-top: 20px;
+    height: auto;
+    width:0;
+    display: none;
+    background: url("../../../public/img/colorful.jpg") center;
+    transition: 1s ease-in-out;
+    border-radius: 0 0 0 10px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 22vw;
+}
+
+.navbar-right div ul {
+    padding: 5px;
+}
+
+.navbar-right div ul li {
+    margin-bottom: 5px;
+    color:white
+
+}
+
+.navbar-element {
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+@media (min-width:600px){
+    .navbar-container {
+        justify-content: flex-start;
+    }
+    .navbar-right {
+        display:none;
+    }
+    .navbar-left {
+        display: block;
+    }
+    .navbar-left ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        padding: 5px;
+    }
+    .navbar-element {
+        margin-right: 10px;
+    }
+}
+

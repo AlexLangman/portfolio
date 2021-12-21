@@ -1,0 +1,30 @@
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container input,.contact-container textarea,.contact-container button {
+    border-radius: 5px;
+    padding:5px ;
+    margin: 10px auto;
+    width:80%;
+    max-width:450px;
+    border: 1px solid black;
+}
+.contact-container textarea {
+    height: 200px;
+}
+
+.contact-container i {
+    color:orange;
+    margin: 0 5px;
+}
+
+.contact-container button {
+    background: url("../../../public/img/colorful.jpg") center;
+    border: none;
+    cursor: pointer;
+    color: white;
+}

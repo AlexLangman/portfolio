@@ -1,0 +1,61 @@
+.home-container {
+    background:url("../../../public/img/space.jpg") fixed;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container * {
+    color:white
+}
+
+.home-container h1 {
+    margin-bottom: 3vh;
+
+}
+
+.home-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 4vh 0;
+    border:5px solid orange
+}
+
+.home-container span {
+    margin: 0 5px;
+}
+
+.home-container span i{
+    color:orange;
+    animation-name: fly;
+    animation-duration: 0.7s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate
+}
+
+@keyframes fly {
+    0%   {transform: translate(0, 0px);}
+    100% {transform: translate(0, -10px)}
+  }
+
+.home-container p {
+    text-align: center;
+    margin-bottom: 3vh;
+    line-height: 1.8;
+    padding: 5px;
+}
+
+.home-container p span {
+      color:orange;
+      font-weight: bold;
+  }
+
+@media (min-width:600px){
+    .home-container img {
+        width: 250px;
+        height: 250px;
+    }
+}
